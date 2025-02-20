@@ -24,7 +24,7 @@ export const review = async (
   logger.debug(`Remote Pull Request: ${yargs.remote ?? 'remote pull request is undefined'}`);
 
   const isCi = yargs.ci;
-  const shouldCommentPerFile = yargs.commentPerFile;
+  const shouldCommentPerFile = true;
   const modelName = yargs.model;
   const reviewType = yargs.reviewType;
   const organization = yargs.org;
